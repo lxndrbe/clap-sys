@@ -27,10 +27,10 @@ jobs:
           components: clippy
       - run: cargo clippy --all-targets -- -D warnings
 
-  build:
-    name: build
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo build --verbose
+      - run: cargo test --verbose

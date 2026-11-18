@@ -1,8 +1,12 @@
 # Unreleased
 
+- Update to CLAP version 1.2.10.
 - Switch to Rust edition 2024.
 - Raise MSRV to 1.85.
 - Replace `cstr!` macro with native `c"..."` literals.
+- Rename `clap_plugin_tuning_t` to `clap_plugin_tuning`.
+- Use `c_char` for mini-curve axis name buffers.
+- Make webview resource stream pointer const.
 
 # 0.5.0
 

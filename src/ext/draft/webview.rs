@@ -21,7 +21,7 @@ pub struct clap_plugin_webview {
             path: *const c_char,
             mime: *mut c_char,
             mime_capacity: u32,
-            data_stream: *mut clap_ostream,
+            data_stream: *const clap_ostream,
         ) -> bool,
     >,
     pub receive: Option<
