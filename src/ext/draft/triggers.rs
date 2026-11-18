@@ -1,8 +1,8 @@
-use crate::{cstr, events::*, host::*, id::*, plugin::*, string_sizes::*};
+use crate::{events::*, host::*, id::*, plugin::*, string_sizes::*};
 
-use core::ffi::{c_char, c_void, CStr};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_EXT_TRIGGERS: &CStr = cstr!("clap.triggers/1");
+pub const CLAP_EXT_TRIGGERS: &CStr = c"clap.triggers/1";
 
 pub const CLAP_TRIGGER_IS_AUTOMATABLE_PER_NOTE_ID: clap_trigger_info_flags = 1 << 0;
 pub const CLAP_TRIGGER_IS_AUTOMATABLE_PER_KEY: clap_trigger_info_flags = 1 << 1;

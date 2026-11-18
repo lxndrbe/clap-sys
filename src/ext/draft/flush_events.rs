@@ -1,10 +1,9 @@
 use crate::{
-    cstr, events::clap_input_events, events::clap_output_events, host::clap_host,
-    plugin::clap_plugin,
+    events::clap_input_events, events::clap_output_events, host::clap_host, plugin::clap_plugin,
 };
 use core::ffi::CStr;
 
-pub const CLAP_EXT_FLUSH_EVENTS: &CStr = cstr!("clap.flush-events/1");
+pub const CLAP_EXT_FLUSH_EVENTS: &CStr = c"clap.flush-events/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,8 +1,6 @@
-use crate::cstr;
+use core::ffi::{CStr, c_char};
 
-use core::ffi::{c_char, CStr};
-
-pub const CLAP_PLUGIN_INVALIDATION_FACTORY_ID: &CStr = cstr!("clap.plugin-invalidation-factory/1");
+pub const CLAP_PLUGIN_INVALIDATION_FACTORY_ID: &CStr = c"clap.plugin-invalidation-factory/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,8 +1,8 @@
-use crate::{cstr, host::*};
+use crate::host::*;
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_EVENT_REGISTRY: &CStr = cstr!("clap.event-registry");
+pub const CLAP_EXT_EVENT_REGISTRY: &CStr = c"clap.event-registry";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

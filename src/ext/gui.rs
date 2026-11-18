@@ -1,15 +1,15 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
-use core::ffi::{c_char, c_ulong, c_void, CStr};
+use core::ffi::{CStr, c_char, c_ulong, c_void};
 use core::fmt::Debug;
 
-pub const CLAP_EXT_GUI: &CStr = cstr!("clap.gui");
+pub const CLAP_EXT_GUI: &CStr = c"clap.gui";
 
-pub const CLAP_WINDOW_API_WIN32: &CStr = cstr!("win32");
-pub const CLAP_WINDOW_API_COCOA: &CStr = cstr!("cocoa");
-pub const CLAP_WINDOW_API_UIKIT: &CStr = cstr!("uikit");
-pub const CLAP_WINDOW_API_X11: &CStr = cstr!("x11");
-pub const CLAP_WINDOW_API_WAYLAND: &CStr = cstr!("wayland");
+pub const CLAP_WINDOW_API_WIN32: &CStr = c"win32";
+pub const CLAP_WINDOW_API_COCOA: &CStr = c"cocoa";
+pub const CLAP_WINDOW_API_UIKIT: &CStr = c"uikit";
+pub const CLAP_WINDOW_API_X11: &CStr = c"x11";
+pub const CLAP_WINDOW_API_WAYLAND: &CStr = c"wayland";
 
 pub type clap_hwnd = *mut c_void;
 pub type clap_nsview = *mut c_void;

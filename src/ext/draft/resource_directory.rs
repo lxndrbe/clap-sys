@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = cstr!("clap.resource-directory/1");
+pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = c"clap.resource-directory/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

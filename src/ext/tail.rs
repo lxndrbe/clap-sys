@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
 use core::ffi::CStr;
 
-pub const CLAP_EXT_TAIL: &CStr = cstr!("clap.tail");
+pub const CLAP_EXT_TAIL: &CStr = c"clap.tail";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

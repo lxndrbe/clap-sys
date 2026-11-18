@@ -19,11 +19,3 @@ pub mod string_sizes;
 pub mod timestamp;
 pub mod universal_plugin_id;
 pub mod version;
-
-/// Define a null terminated `CStr` literal.
-macro_rules! cstr {
-    ($str:literal) => {
-        unsafe { core::ffi::CStr::from_bytes_with_nul_unchecked(concat!($str, "\0").as_bytes()) }
-    };
-}
-pub(crate) use cstr;

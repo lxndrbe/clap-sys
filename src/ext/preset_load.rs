@@ -1,10 +1,10 @@
 use crate::factory::preset_discovery::*;
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_PRESET_LOAD: &CStr = cstr!("clap.preset-load/2");
-pub const CLAP_EXT_PRESET_LOAD_COMPAT: &CStr = cstr!("clap.preset-load.draft/2");
+pub const CLAP_EXT_PRESET_LOAD: &CStr = c"clap.preset-load/2";
+pub const CLAP_EXT_PRESET_LOAD_COMPAT: &CStr = c"clap.preset-load.draft/2";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

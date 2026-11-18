@@ -1,8 +1,8 @@
-use crate::{cstr, events::*, host::*, id::*, plugin::*, string_sizes::*};
+use crate::{events::*, host::*, id::*, plugin::*, string_sizes::*};
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_TUNING: &CStr = cstr!("clap.tuning/2");
+pub const CLAP_EXT_TUNING: &CStr = c"clap.tuning/2";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,7 +1,7 @@
-use crate::{cstr, host::clap_host, plugin::clap_plugin};
+use crate::{host::clap_host, plugin::clap_plugin};
 use core::ffi::CStr;
 
-pub const CLAP_EXT_MINI_CURVE_DISPLAY: &CStr = cstr!("clap.mini-curve-display/3");
+pub const CLAP_EXT_MINI_CURVE_DISPLAY: &CStr = c"clap.mini-curve-display/3";
 
 pub const CLAP_MINI_CURVE_DISPLAY_CURVE_KIND_UNSPECIFIED: i32 = 0;
 pub const CLAP_MINI_CURVE_DISPLAY_CURVE_KIND_GAIN_RESPONSE: i32 = 1;

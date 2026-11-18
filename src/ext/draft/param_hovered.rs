@@ -1,7 +1,7 @@
-use crate::{cstr, host::clap_host, id::clap_id};
+use crate::{host::clap_host, id::clap_id};
 use core::ffi::CStr;
 
-pub const CLAP_EXT_PARAM_HOVERED: &CStr = cstr!("clap.param-hovered/1");
+pub const CLAP_EXT_PARAM_HOVERED: &CStr = c"clap.param-hovered/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

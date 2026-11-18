@@ -1,3 +1,9 @@
+# Unreleased
+
+- Switch to Rust edition 2024.
+- Raise MSRV to 1.85.
+- Replace `cstr!` macro with native `c"..."` literals.
+
 # 0.5.0
 
 - Update to CLAP version 1.2.2.

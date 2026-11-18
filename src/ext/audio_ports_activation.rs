@@ -1,10 +1,9 @@
-use crate::{cstr, plugin::*};
+use crate::plugin::*;
 
 use core::ffi::CStr;
 
-pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION: &CStr = cstr!("clap.audio-ports-activation/2");
-pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION_COMPAT: &CStr =
-    cstr!("clap.audio-ports-activation/draft-2");
+pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION: &CStr = c"clap.audio-ports-activation/2";
+pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION_COMPAT: &CStr = c"clap.audio-ports-activation/draft-2";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

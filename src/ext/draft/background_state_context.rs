@@ -1,11 +1,10 @@
 use crate::{
-    cstr,
     plugin::clap_plugin,
     stream::{clap_istream, clap_ostream},
 };
 use core::ffi::CStr;
 
-pub const CLAP_EXT_BACKGROUND_STATE_CONTEXT: &CStr = cstr!("clap.background-state-context/1");
+pub const CLAP_EXT_BACKGROUND_STATE_CONTEXT: &CStr = c"clap.background-state-context/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

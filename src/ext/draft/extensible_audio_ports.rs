@@ -1,8 +1,8 @@
-use crate::{cstr, plugin::*};
+use crate::plugin::*;
 
-use core::ffi::{c_char, c_void, CStr};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_EXT_EXTENSIBLE_AUDIO_PORTS: &CStr = cstr!("clap.extensible-audio-ports/1");
+pub const CLAP_EXT_EXTENSIBLE_AUDIO_PORTS: &CStr = c"clap.extensible-audio-ports/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

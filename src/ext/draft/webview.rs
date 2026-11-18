@@ -1,9 +1,9 @@
-use crate::{cstr, host::clap_host, plugin::clap_plugin, stream::clap_ostream};
-use core::ffi::{c_char, c_void, CStr};
+use crate::{host::clap_host, plugin::clap_plugin, stream::clap_ostream};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_EXT_WEBVIEW: &CStr = cstr!("clap.webview/3");
+pub const CLAP_EXT_WEBVIEW: &CStr = c"clap.webview/3";
 
-pub const CLAP_WINDOW_API_WEBVIEW: &CStr = cstr!("webview");
+pub const CLAP_WINDOW_API_WEBVIEW: &CStr = c"webview";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

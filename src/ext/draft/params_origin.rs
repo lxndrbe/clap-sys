@@ -1,7 +1,7 @@
-use crate::{cstr, host::clap_host, id::clap_id, plugin::clap_plugin};
+use crate::{host::clap_host, id::clap_id, plugin::clap_plugin};
 use core::ffi::CStr;
 
-pub const CLAP_EXT_PARAMS_ORIGIN: &CStr = cstr!("clap.params-origin/1");
+pub const CLAP_EXT_PARAMS_ORIGIN: &CStr = c"clap.params-origin/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

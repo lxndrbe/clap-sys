@@ -1,7 +1,7 @@
-use crate::{cstr, plugin::clap_plugin};
+use crate::plugin::clap_plugin;
 use core::ffi::CStr;
 
-pub const CLAP_EXT_OCTAVE_NUMBER: &CStr = cstr!("clap.octave-number/1");
+pub const CLAP_EXT_OCTAVE_NUMBER: &CStr = c"clap.octave-number/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,10 +1,9 @@
-use crate::{cstr, timestamp::*, universal_plugin_id::*, version::*};
+use crate::{timestamp::*, universal_plugin_id::*, version::*};
 
-use core::ffi::{c_char, c_void, CStr};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = cstr!("clap.preset-discovery-factory/2");
-pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr =
-    cstr!("clap.preset-discovery-factory/draft-2");
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = c"clap.preset-discovery-factory/2";
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr = c"clap.preset-discovery-factory/draft-2";
 
 pub const CLAP_PRESET_DISCOVERY_LOCATION_FILE: clap_preset_discovery_location_kind = 0;
 pub const CLAP_PRESET_DISCOVERY_LOCATION_PLUGIN: clap_preset_discovery_location_kind = 1;

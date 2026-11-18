@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_PLUGIN_FACTORY_ID: &CStr = cstr!("clap.plugin-factory");
+pub const CLAP_PLUGIN_FACTORY_ID: &CStr = c"clap.plugin-factory";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

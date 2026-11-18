@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, plugin::*, string_sizes::*};
+use crate::{host::*, plugin::*, string_sizes::*};
 
-use core::ffi::{c_char, CStr};
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_NOTE_NAME: &CStr = cstr!("clap.note-name");
+pub const CLAP_EXT_NOTE_NAME: &CStr = c"clap.note-name";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,7 +1,7 @@
-use crate::{cstr, host::clap_host};
-use core::ffi::{c_char, CStr};
+use crate::host::clap_host;
+use core::ffi::{CStr, c_char};
 
-pub const CLAP_EXT_BACKGROUND_PROGRESS: &CStr = cstr!("clap.background-progress/1");
+pub const CLAP_EXT_BACKGROUND_PROGRESS: &CStr = c"clap.background-progress/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

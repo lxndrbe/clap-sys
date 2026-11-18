@@ -1,10 +1,9 @@
-use crate::{cstr, plugin::*};
+use crate::plugin::*;
 
-use core::ffi::{c_char, c_void, CStr};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_EXT_CONFIGURABLE_AUDIO_PORTS: &CStr = cstr!("clap.configurable-audio-ports/1");
-pub const CLAP_EXT_CONFIGURABLE_AUDIO_PORTS_COMPAT: &CStr =
-    cstr!("clap.configurable-audio-ports.draft1");
+pub const CLAP_EXT_CONFIGURABLE_AUDIO_PORTS: &CStr = c"clap.configurable-audio-ports/1";
+pub const CLAP_EXT_CONFIGURABLE_AUDIO_PORTS_COMPAT: &CStr = c"clap.configurable-audio-ports.draft1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

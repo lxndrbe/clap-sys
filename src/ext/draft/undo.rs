@@ -1,10 +1,10 @@
-use crate::{cstr, host::*, id::*, plugin::*};
+use crate::{host::*, id::*, plugin::*};
 
-use core::ffi::{c_char, c_void, CStr};
+use core::ffi::{CStr, c_char, c_void};
 
-pub const CLAP_EXT_UNDO: &CStr = cstr!("clap.undo/4");
-pub const CLAP_EXT_UNDO_CONTEXT: &CStr = cstr!("clap.undo_context/4");
-pub const CLAP_EXT_UNDO_DELTA: &CStr = cstr!("clap.undo_delta/4");
+pub const CLAP_EXT_UNDO: &CStr = c"clap.undo/4";
+pub const CLAP_EXT_UNDO_CONTEXT: &CStr = c"clap.undo_context/4";
+pub const CLAP_EXT_UNDO_DELTA: &CStr = c"clap.undo_delta/4";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

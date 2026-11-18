@@ -1,7 +1,7 @@
-use crate::{cstr, plugin::clap_plugin};
+use crate::plugin::clap_plugin;
 use core::ffi::CStr;
 
-pub const CLAP_EXT_BACKGROUND_ACTIVATION: &CStr = cstr!("clap.background-activation/1");
+pub const CLAP_EXT_BACKGROUND_ACTIVATION: &CStr = c"clap.background-activation/1";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
