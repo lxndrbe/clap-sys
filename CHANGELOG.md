@@ -1,4 +1,4 @@
-# Unreleased
+# 0.6.0
 
 - Update to CLAP version 1.2.10.
 - Switch to Rust edition 2024.
@@ -7,6 +7,7 @@
 - Rename `clap_plugin_tuning_t` to `clap_plugin_tuning`.
 - Use `c_char` for mini-curve axis name buffers.
 - Make webview resource stream pointer const.
+- Add ABI layout smoke tests.
 
 # 0.5.0
 
